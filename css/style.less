@@ -1,0 +1,1064 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: calc(100vw/7.2);
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.hid {
+    display: none;
+}
+
+.box {
+    width: 7.20rem;
+    height: 100%;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 bottom;
+    position: relative;
+    overflow: hidden;
+
+    .upup {
+        animation: upup 3250ms linear forwards;
+    }
+
+    @keyframes upup {
+        0% {
+            background-position: 0 bottom;
+        }
+
+        100% {
+            background-position: 0 top;
+        }
+    }
+
+    @keyframes xianxing {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes xiaoshi {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    .bigbox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .down {
+        animation: dh_down 2000ms linear forwards;
+    }
+
+    @keyframes dh_down {
+        0% {
+            bottom: 0;
+        }
+
+        100% {
+            bottom: -8rem;
+        }
+    }
+
+    .mount {
+        width: 7.20rem;
+        position: absolute;
+        bottom: 6.63rem;
+        left: 0;
+        z-index: 3;
+        animation: xianxing 2000ms linear forwards;
+    }
+
+    .top_phone {
+        width: 7.2rem;
+        position: absolute;
+        top: 0.40rem;
+        left: 0;
+        z-index: 2;
+        animation: xianxing 2000ms linear forwards;
+    }
+
+    .phone,
+    .small_wifi {
+        width: 0.76rem;
+        position: absolute;
+        top: 1.19rem;
+        left: 1.36rem;
+        animation: xianxing 1000ms linear forwards;
+    }
+
+    .ziti1,
+    .ziti9,
+    .ziti11 {
+        font-size: 0.28rem;
+        position: absolute;
+        top: 1.19rem;
+        left: 2.27rem;
+        color: white;
+        font-weight: bold;
+        animation: xianxing 1000ms linear forwards;
+    }
+
+    .ziti3,
+    .ziti10 {
+        font-size: 0.25rem;
+        position: absolute;
+        top: 2.27rem;
+        left: 1.36rem;
+        color: white;
+        animation: xianxing 1000ms linear forwards;
+    }
+
+    .ziti4 {
+        font-size: 0.31rem;
+        color: white;
+        margin-top: 1.41rem;
+        text-align: center;
+        animation: xianxing 2000ms linear forwards;
+
+        span {
+            letter-spacing: 0.22rem;
+            margin-left: 0.22rem;
+        }
+    }
+
+    .ziti5 {
+        font-size: 1.04rem;
+        color: white;
+        margin-top: 0.67rem;
+        text-align: center;
+        font-family: "Microsoft YaHei";
+        animation: xianxing 2000ms linear forwards;
+
+    }
+
+    .ziti6 {
+        color: #008a7a;
+        position: absolute;
+        bottom: 4.91rem;
+        left: 2.45rem;
+        font-size: 0.37rem;
+        z-index: 21;
+        opacity: 0;
+        animation: xianxing 1000ms forwards 2200ms;
+        letter-spacing: 0.1rem;
+    }
+
+    .jiantou {
+        width: 0.64rem;
+        position: absolute;
+        left: 3.46rem;
+        bottom: 2.28rem;
+        z-index: 21;
+        opacity: 0;
+        animation: xianxing 1000ms forwards 2200ms;
+    }
+
+    .jtdh {
+        animation: xianxing 1800ms infinite;
+    }
+
+    .ziti7 {
+        position: absolute;
+        top: 1.33rem;
+        left: 1.37rem;
+        color: white;
+        font-size: 0.3rem;
+        opacity: 0;
+        animation: xianxing 1000ms forwards 2200ms;
+    }
+
+    .ziti8 {
+        position: absolute;
+        top: 2.39rem;
+        left: 3.57rem;
+        color: white;
+        font-size: 0.2rem;
+        opacity: 0;
+        animation: xianxing 1000ms forwards 2200ms;
+    }
+
+    .get {
+        width: 2.04rem;
+        height: 0.52rem;
+        font-size: 0.24rem;
+        position: absolute;
+        top: 2.28rem;
+        left: 2.59rem;
+        color: white;
+        text-align: center;
+        line-height: 0.52rem;
+        border: 0.01rem solid white;
+        border-radius: 0.35rem;
+        opacity: 0;
+        animation: xianxing 1000ms linear forwards;
+    }
+
+    .ziti12 {
+        color: white;
+        position: absolute;
+        top: 1.18rem;
+        left: 1.25rem;
+        font-size: 0.28rem;
+        font-weight: bold;
+        opacity: 0;
+        animation: xianxing 1000ms linear forwards;
+    }
+
+    .ziti13 {
+        color: white;
+        position: absolute;
+        top: 2.54rem;
+        left: 1.25rem;
+        font-size: 0.25rem;
+        opacity: 0;
+        animation: xianxing 1000ms linear forwards;
+    }
+    .ziti14{
+        color: white;
+        position: absolute;
+        top: 0.87rem;
+        left: 0.77rem;
+        font-size: 0.28rem;
+        p{
+            margin-bottom: 0.25rem;
+            &:nth-child(1){
+                margin-bottom: 0.2rem;
+            }
+        }
+        span{
+            font-size: 0.4rem;
+        }
+    }
+    .share{
+        color: white;
+        width: 2rem;
+        height: 0.6rem;
+        border: 0.01rem solid white;
+        border-radius: 0.6rem;
+        text-align: center;
+        font-size: 0.28rem;
+        line-height: 0.6rem ;
+        position: absolute;
+        top: 0.87rem;
+        left: 4.6rem;
+        img{
+            width: 0.18rem;
+            display: inline-block;
+        }
+        span{
+            margin-left: 0.1rem;
+        }
+    }
+    .clond_one {
+        width: 7.20rem;
+        position: absolute;
+        bottom: 3.30rem;
+        left: 0;
+        animation: xianxing 2000ms linear forwards;
+    }
+
+    .clond_two {
+        width: 7.2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: xianxing 2000ms linear forwards;
+    }
+
+    .clond_three {
+        width: 7.20rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+        animation: xianxing 2000ms linear forwards;
+    }
+
+    .jianzhu1 {
+        width: 2.50rem;
+        position: absolute;
+        bottom: 2.01rem;
+        left: 1.02rem;
+        z-index: 3;
+        --animate-duration: 2000ms;
+    }
+
+    .zhuzi1 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: 1.82rem;
+        left: 0.35rem;
+        z-index: 4;
+    }
+
+    .shouji {
+        width: 0.68rem;
+        position: absolute;
+        bottom: 5.24rem;
+        left: 0.54rem;
+        z-index: 5;
+
+        .shouji_2 {
+            animation: dh 2000ms linear infinite;
+        }
+    }
+
+    @keyframes dh {
+        0% {
+            transform: translateY(-0.1rem);
+        }
+
+        50% {
+            transform: translateY(0.1rem);
+        }
+
+        100% {
+            transform: translateY(-0.1rem);
+        }
+    }
+
+    .zhuzi2 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: 3.53rem;
+        right: 1.89rem;
+        z-index: 5;
+    }
+
+    .wifi {
+        width: 0.82rem;
+        position: absolute;
+        bottom: 6.84rem;
+        right: 1.97rem;
+        z-index: 6;
+
+        .wifi_2 {
+            animation: dh 2000ms linear infinite;
+        }
+    }
+
+    .jianzhu2 {
+        width: 1.5rem;
+        position: absolute;
+        bottom: 1.45rem;
+        right: 0.10rem;
+        z-index: 6;
+        --animate-duration: 2500ms;
+    }
+
+    .zhuzi3 {
+        width: 1.26rem;
+        position: absolute;
+        bottom: 0.20rem;
+        right: 0.15rem;
+        z-index: 7;
+    }
+
+    .coin {
+        width: 0.6rem;
+        position: absolute;
+        bottom: 4.20rem;
+        right: 0.552rem;
+        z-index: 8;
+
+        .coin_2 {
+            animation: dh 2000ms linear infinite;
+        }
+    }
+
+    .zhuzi4 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: -0.52rem;
+        right: -0.38rem;
+        z-index: 8;
+        --animate-duration: 1000ms;
+    }
+
+    .delta {
+        width: 2.00rem;
+        position: absolute;
+        left: 2.52rem;
+        bottom: 0;
+        z-index: 19;
+        animation: sjx 2000ms linear forwards;
+    }
+
+    @keyframes sjx {
+        0% {
+            bottom: -1rem;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+
+    .road1 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: -3.19rem;
+        left: 2.54rem;
+        z-index: 18;
+    }
+
+    .road2 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: -2.9rem;
+        left: 2.04rem;
+        z-index: 17;
+    }
+
+    .road3 {
+        width: 2.00rem;
+        position: absolute;
+        bottom: -3.36rem;
+        left: 1.57rem;
+        z-index: 16;
+    }
+
+    .road4 {
+        width: 1.76rem;
+        position: absolute;
+        bottom: -0.33rem;
+        left: 1.33rem;
+        z-index: 15;
+    }
+
+    .road5 {
+        width: 1.76rem;
+        position: absolute;
+        bottom: 0.382rem;
+        left: 0.10rem;
+        z-index: 14;
+    }
+
+    .floor1 {
+        width: 1rem;
+        position: absolute;
+        bottom: -0.1rem;
+        left: 0.844rem;
+        z-index: 12;
+    }
+
+    .zhuzi5 {
+        width: 1rem;
+        position: absolute;
+        bottom: 0.66rem;
+        left: 1.34rem;
+        z-index: 11;
+    }
+
+    .road6 {
+        width: 1.26rem;
+        position: absolute;
+        bottom: 1.39rem;
+        left: 0.84rem;
+        z-index: 10;
+    }
+
+    .road7 {
+        width: 1.26rem;
+        position: absolute;
+        bottom: 1.815rem;
+        left: 1.579rem;
+        z-index: 9;
+    }
+
+    .road8 {
+        width: 1.26rem;
+        position: absolute;
+        bottom: 2.24rem;
+        left: 2.314rem;
+        z-index: 8;
+    }
+
+    .road9 {
+        width: 1.26rem;
+        position: absolute;
+        bottom: 2.67rem;
+        left: 3.055rem;
+        z-index: 7;
+    }
+
+    .zhuzi6 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: 2.658rem;
+        left: 3.81rem;
+        z-index: 6;
+    }
+
+    .floor2 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: 4.67rem;
+        left: 4.3rem;
+        z-index: 6;
+    }
+
+    .road10 {
+        width: 2.00rem;
+        position: absolute;
+        bottom: -0.07rem;
+        left: 3.82rem;
+        z-index: 7;
+    }
+
+    .road11 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: 0.38rem;
+        left: 4.3rem;
+        z-index: 8;
+    }
+
+    .road12 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: 0.09rem;
+        left: 4.80rem;
+        z-index: 9;
+    }
+
+    .zhuzi7 {
+        width: 1rem;
+        position: absolute;
+        bottom: 0.1rem;
+        left: 5.30rem;
+        z-index: 10;
+    }
+
+    .floor3 {
+        width: 0.76rem;
+        position: absolute;
+        bottom: 2.758rem;
+        left: 5.04rem;
+        z-index: 11;
+    }
+
+    .road13 {
+        width: 1.26rem;
+        position: absolute;
+        bottom: -0.31rem;
+        left: 4.3rem;
+        z-index: 12;
+    }
+
+    .road14 {
+        width: 1.26rem;
+        position: absolute;
+        bottom: 0.14rem;
+        left: 3.58rem;
+        z-index: 13;
+    }
+
+    .zhuzi8 {
+        width: 1.00rem;
+        position: absolute;
+        bottom: -1.83rem;
+        left: 3.07rem;
+        z-index: 10;
+    }
+
+    .downup {
+        animation: downup 4000ms linear forwards;
+    }
+
+    @keyframes downup {
+        0% {
+            bottom: -1.83rem;
+        }
+
+        25% {
+            bottom: -2.63rem;
+        }
+
+        100% {
+            bottom: -0.70rem;
+        }
+    }
+
+    .fengche {
+        width: 1.63rem;
+        position: absolute;
+        bottom: 0.62rem;
+        left: 2.1rem;
+        z-index: 9;
+        --animate-duration: 3000ms;
+        overflow: hidden;
+
+        .fengche_box {
+            width: 9.99rem;
+            animation: fc_dh 500ms steps(1) infinite;
+        }
+
+        img {
+            width: 1.63rem;
+            float: left;
+        }
+    }
+
+    @keyframes fc_dh {
+        0% {
+            transform: translateX(-1.63rem);
+        }
+
+        33.3% {
+            transform: translateX(-3.26rem);
+        }
+
+        66.6% {
+            transform: translateX(-4.89rem);
+        }
+
+        100% {
+            transform: translateX(-6.52rem);
+        }
+    }
+
+    .active,
+    .active2,
+    .active3,
+    .active4,
+    .zhuzi1,
+    .shouji,
+    .zhuzi2,
+    .zhuzi3,
+    .wifi,
+    .coin {
+        --animate-duration: 3000ms;
+    }
+
+    /*------------鸽子精-------------*/
+    .gezi {
+        width: 0.7rem;
+        height: 1rem;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 3.2rem;
+        z-index: 20;
+        animation: sjx 2000ms linear forwards;
+    }
+    .downup2{
+        animation: downup2 4000ms linear forwards;
+    }
+    @keyframes downup2 {
+        0%{
+            bottom:  2.95rem;
+        }
+        25%{
+            bottom: 2.15rem;
+        }
+        100%{
+            bottom: 4.20rem;
+        }
+    }
+    .gezi1_1 {
+        position: absolute;
+        bottom: 4.01rem;
+        left: 1.54rem;
+        animation: none;
+    }
+
+    .gezi1_2 {
+        position: absolute;
+        bottom: 5.93rem;
+        left: 3.95rem;
+        animation: none;
+    }
+
+    .gezi1_3 {
+        position: absolute;
+        bottom: 3.40rem;
+        left: 5.45rem;
+        animation: none;
+    }
+
+    .gezi1_4 {
+        position: absolute;
+        bottom: 2.95rem;
+        left: 3.1rem;
+        animation: none;
+    }
+
+    @keyframes ge1 {
+        0% {
+            bottom: 0rem;
+            left: 3.2rem;
+        }
+
+        // 26.97%{
+        //     // background-image: url(../images/gz1.png);
+        // }
+        // 26.98%{
+        //     // background-image: url(../images/gz11.png);
+        // }
+        26.99% {
+            bottom: 1rem;
+            left: 1.7rem;
+        }
+
+        // 43.81%{
+        //     // background-image: url(../images/gz11.png);
+        // }
+        // 43.82%{
+        //     // background-image: url(../images/gz1.png);
+        // }
+        43.83% {
+            bottom: 1.6rem;
+            left: 2.7rem;
+        }
+
+        // 78.2%{
+        //     // background-image: url(../images/gz1.png);
+        // }
+        // 78.21%{
+        //     // background-image: url(../images/gz11.png);
+        // }
+        78.22% {
+            bottom: 2.8rem;
+            left: 0.65rem;
+        }
+
+        // 99.89%{
+        //     // background-image: url(../images/gz11.png);
+        // }
+        // 99.9%{
+        //     // background-image: url(../images/gz11.png);
+        // }
+        100% {
+            bottom: 4.01rem;
+            left: 1.54rem;
+        }
+    }
+
+    @keyframes ge2 {
+        0% {
+            bottom: 4.01rem;
+            left: 1.54rem;
+        }
+
+        // 14.61%{
+        //     // background-image: url(../images/gz1.png);
+        // }
+        // 14.62%{
+        //     // background-image: url(../images/gz11.png);
+        // }
+        14.63% {
+            bottom: 4.3rem;
+            left: 1.05rem;
+        }
+
+        // 99.999%{
+        //     // background-image: url(../images/gz11.png);
+        // }
+        100% {
+            bottom: 5.93rem;
+            left: 3.95rem;
+            // background-image: url(../images/gz21.png);
+        }
+    }
+
+    @keyframes ge3 {
+        0% {
+            bottom: 5.93rem;
+            left: 3.95rem;
+            // background-image: url(../images/gz21.png);
+        }
+
+        // 34.68%{
+        //     // background-image: url(../images/gz21.png);
+        // }
+        // 34.69%{
+        //     // background-image: url(../images/gz31.png);
+        // }
+        34.7% {
+            bottom: 4.82rem;
+            left: 4.89rem;
+        }
+
+        // 59.14%{
+        //     // background-image: url(../images/gz31.png);
+        // }
+        // 59.15%{
+        //     // background-image: url(../images/gz21.png);
+        // }
+        59.16% {
+            bottom: 4.31rem;
+            left: 4rem;
+        }
+
+        // 99.99%{
+        //     // background-image: url(../images/gz21.png);
+        // }
+        100% {
+            bottom: 3.40rem;
+            left: 5.45rem;
+            // background-image: url(../images/gz11.png);
+        }
+    }
+
+    @keyframes ge4 {
+        0% {
+            bottom: 3.40rem;
+            left: 5.45rem;
+            // background-image: url(../images/gz31.png);
+        }
+
+        // 63.61%{
+        //     // background-image: url(../images/gz31.png);
+        // }
+        // 63.62%{
+        //     // background-image: url(../images/gz1.png);
+        // }
+        63.63% {
+            bottom: 2.28rem;
+            left: 3.95rem;
+        }
+
+        100% {
+            bottom: 2.95rem;
+            left: 3.2rem;
+        }
+    }
+    // .gezi_after{
+    //     width: 0.7rem;
+    //     height: 1rem;
+    //     position: absolute;
+    //     bottom: 2.95rem;
+    //     left: 3.2rem;
+    // }
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        border: white 0.1rem solid;
+        position: absolute;
+        bottom: 3.45rem;
+        left: 1.15rem;
+        opacity: 0.4;
+        z-index: 24;
+        animation: circle_dh 1000ms linear infinite alternate-reverse;
+        display: none;
+    }
+
+    .circle2 {
+        bottom: 5.50rem;
+        left: 3.60rem;
+    }
+
+    .circle3 {
+        bottom: 2.90rem;
+        left: 5.10rem;
+    }
+
+    .circle4 {
+        bottom: 2.45rem;
+        left: 2.9rem;
+    }
+
+    @keyframes circle_dh {
+        0% {
+            opacity: 0.4;
+            transform: scale(0.6);
+        }
+
+        50% {
+            opacity: 0.7;
+            transform: scale(0.4);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(0.2);
+        }
+    }
+    .star1{
+        width: 2.1rem;
+        height: 2.08rem;
+        background-image: url(../images/star_box1.png);
+        background-repeat: no-repeat;
+        background-size: 2.1rem 2.08rem;
+        position: absolute;
+        top: 3.87rem;
+        left: 2.59rem;
+        display: none;
+        .star1_gezi{
+            width: 0.7rem;
+            margin-left: 0.81rem;
+            margin-top: -0.6rem;
+        }
+        .star1_number{
+            color: white;
+            font-size: 0.24rem;
+            width: 1.8rem;
+            height: 0.4rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 0.02rem solid rgb(255, 255, 255,0.3);
+            border-radius: 0.15rem;
+            line-height: 0.4rem;
+            text-align: center;
+            margin-top: 0.7rem;
+            margin-left: 0.15rem;
+        }
+    }
+    .star2{
+        width: 1.82rem;
+        height: 1.82rem;
+        background-image: url(../images/star_box2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 5.1rem;
+        right: 0.35rem;
+        display: none;
+        .star2_gezi{
+            width: 0.7rem;
+            margin-left: 0.6rem;
+            margin-top: -0.45rem;
+        }
+        .star2_number{
+            color: white;
+            font-size: 0.24rem;
+            width: 1.8rem;
+            height: 0.4rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 0.02rem solid rgb(255, 255, 255,0.3);
+            border-radius: 0.15rem;
+            line-height: 0.4rem;
+            text-align: center;
+            margin-top: 0.50rem;
+            margin-left: -0.05rem;
+        }
+    }
+    .star3{
+        width: 1.65rem;
+        height: 1.64rem;
+        background-image: url(../images/star_box3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top:5.82rem;
+        left: 0.44rem;
+        display: none;
+        .star3_gezi{
+            width: 0.7rem;
+            margin-left: 0.55rem;
+            margin-top: -0.5rem;
+        }
+        .star3_number{
+            color: white;
+            font-size: 0.24rem;
+            width: 1.8rem;
+            height: 0.4rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 0.02rem solid rgb(255, 255, 255,0.3);
+            border-radius: 0.15rem;
+            line-height: 0.4rem;
+            text-align: center;
+            margin-top: 0.50rem;
+            margin-left: -0.1rem;
+        }
+    }
+    .star1dh{
+        animation: star1_dh 1000ms linear forwards;
+    }
+    .star2dh{
+        animation: star2_dh 1000ms linear forwards;
+    }
+    .star3dh{
+        animation: star3_dh 1000ms linear forwards;
+    }
+    @keyframes star1_dh {
+        0%{
+            display: none;
+            transform: scale(0);
+        }
+        100%{
+            display: block;
+            transform: scale(1);
+        }
+    }
+    @keyframes star2_dh {
+        0%{
+            display: none;
+            transform: translateX(2rem) rotate(0);
+        }
+        100%{
+            display: block;
+            transform: translateX(0) rotate(360deg);
+        }
+    }   
+    @keyframes star3_dh {
+        0%{
+            display: none;
+            transform: translateX(-2rem) rotate(0);
+        }
+        100%{
+            display: block;
+            transform: translateX(0) rotate(360deg);
+        }
+    }
+    @keyframes star_updown {
+        0%{
+            transform: translateY(0.1rem);
+        }
+        100%{
+            transform: translateY(-0.1rem);
+        }
+    }   
+    .draw,.look{
+        width: 2.02rem;
+        height: 0.6rem;
+        border: 0.01rem solid white;
+        border-radius: 0.6rem;
+        line-height: 0.6rem;
+        position: absolute;
+        bottom: 0.61rem;
+        left: 0.7rem;
+        color: white;
+        font-size: 0.28rem;
+        text-align: center;
+        // background-color: #008a7a;
+        img{
+            width: 0.18rem;
+            display: inline-block;
+        }
+        span{
+            margin-left: 0.1rem;
+        }
+    }
+    .look{
+        left: 4.50rem;
+    }
+}

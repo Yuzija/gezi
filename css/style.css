@@ -1,0 +1,893 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: calc(100vw/7.2);
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.hid {
+  display: none;
+}
+.box {
+  width: 7.2rem;
+  height: 100%;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 bottom;
+  position: relative;
+  overflow: hidden;
+  /*------------鸽子精-------------*/
+}
+.box .upup {
+  animation: upup 3250ms linear forwards;
+}
+@keyframes upup {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 0 top;
+  }
+}
+@keyframes xianxing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes xiaoshi {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.box .bigbox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.box .down {
+  animation: dh_down 2000ms linear forwards;
+}
+@keyframes dh_down {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -8rem;
+  }
+}
+.box .mount {
+  width: 7.2rem;
+  position: absolute;
+  bottom: 6.63rem;
+  left: 0;
+  z-index: 3;
+  animation: xianxing 2000ms linear forwards;
+}
+.box .top_phone {
+  width: 7.2rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0;
+  z-index: 2;
+  animation: xianxing 2000ms linear forwards;
+}
+.box .phone,
+.box .small_wifi {
+  width: 0.76rem;
+  position: absolute;
+  top: 1.19rem;
+  left: 1.36rem;
+  animation: xianxing 1000ms linear forwards;
+}
+.box .ziti1,
+.box .ziti9,
+.box .ziti11 {
+  font-size: 0.28rem;
+  position: absolute;
+  top: 1.19rem;
+  left: 2.27rem;
+  color: white;
+  font-weight: bold;
+  animation: xianxing 1000ms linear forwards;
+}
+.box .ziti3,
+.box .ziti10 {
+  font-size: 0.25rem;
+  position: absolute;
+  top: 2.27rem;
+  left: 1.36rem;
+  color: white;
+  animation: xianxing 1000ms linear forwards;
+}
+.box .ziti4 {
+  font-size: 0.31rem;
+  color: white;
+  margin-top: 1.41rem;
+  text-align: center;
+  animation: xianxing 2000ms linear forwards;
+}
+.box .ziti4 span {
+  letter-spacing: 0.22rem;
+  margin-left: 0.22rem;
+}
+.box .ziti5 {
+  font-size: 1.04rem;
+  color: white;
+  margin-top: 0.67rem;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  animation: xianxing 2000ms linear forwards;
+}
+.box .ziti6 {
+  color: #008a7a;
+  position: absolute;
+  bottom: 4.91rem;
+  left: 2.45rem;
+  font-size: 0.37rem;
+  z-index: 21;
+  opacity: 0;
+  animation: xianxing 1000ms forwards 2200ms;
+  letter-spacing: 0.1rem;
+}
+.box .jiantou {
+  width: 0.64rem;
+  position: absolute;
+  left: 3.46rem;
+  bottom: 2.28rem;
+  z-index: 21;
+  opacity: 0;
+  animation: xianxing 1000ms forwards 2200ms;
+}
+.box .jtdh {
+  animation: xianxing 1800ms infinite;
+}
+.box .ziti7 {
+  position: absolute;
+  top: 1.33rem;
+  left: 1.37rem;
+  color: white;
+  font-size: 0.3rem;
+  opacity: 0;
+  animation: xianxing 1000ms forwards 2200ms;
+}
+.box .ziti8 {
+  position: absolute;
+  top: 2.39rem;
+  left: 3.57rem;
+  color: white;
+  font-size: 0.2rem;
+  opacity: 0;
+  animation: xianxing 1000ms forwards 2200ms;
+}
+.box .get {
+  width: 2.04rem;
+  height: 0.52rem;
+  font-size: 0.24rem;
+  position: absolute;
+  top: 2.28rem;
+  left: 2.59rem;
+  color: white;
+  text-align: center;
+  line-height: 0.52rem;
+  border: 0.01rem solid white;
+  border-radius: 0.35rem;
+  opacity: 0;
+  animation: xianxing 1000ms linear forwards;
+}
+.box .ziti12 {
+  color: white;
+  position: absolute;
+  top: 1.18rem;
+  left: 1.25rem;
+  font-size: 0.28rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: xianxing 1000ms linear forwards;
+}
+.box .ziti13 {
+  color: white;
+  position: absolute;
+  top: 2.54rem;
+  left: 1.25rem;
+  font-size: 0.25rem;
+  opacity: 0;
+  animation: xianxing 1000ms linear forwards;
+}
+.box .ziti14 {
+  color: white;
+  position: absolute;
+  top: 0.87rem;
+  left: 0.77rem;
+  font-size: 0.28rem;
+}
+.box .ziti14 p {
+  margin-bottom: 0.25rem;
+}
+.box .ziti14 p:nth-child(1) {
+  margin-bottom: 0.2rem;
+}
+.box .ziti14 span {
+  font-size: 0.4rem;
+}
+.box .share {
+  color: white;
+  width: 2rem;
+  height: 0.6rem;
+  border: 0.01rem solid white;
+  border-radius: 0.6rem;
+  text-align: center;
+  font-size: 0.28rem;
+  line-height: 0.6rem;
+  position: absolute;
+  top: 0.87rem;
+  left: 4.6rem;
+}
+.box .share img {
+  width: 0.18rem;
+  display: inline-block;
+}
+.box .share span {
+  margin-left: 0.1rem;
+}
+.box .clond_one {
+  width: 7.2rem;
+  position: absolute;
+  bottom: 3.3rem;
+  left: 0;
+  animation: xianxing 2000ms linear forwards;
+}
+.box .clond_two {
+  width: 7.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: xianxing 2000ms linear forwards;
+}
+.box .clond_three {
+  width: 7.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  animation: xianxing 2000ms linear forwards;
+}
+.box .jianzhu1 {
+  width: 2.5rem;
+  position: absolute;
+  bottom: 2.01rem;
+  left: 1.02rem;
+  z-index: 3;
+  --animate-duration: 2000ms;
+}
+.box .zhuzi1 {
+  width: 1rem;
+  position: absolute;
+  bottom: 1.82rem;
+  left: 0.35rem;
+  z-index: 4;
+}
+.box .shouji {
+  width: 0.68rem;
+  position: absolute;
+  bottom: 5.24rem;
+  left: 0.54rem;
+  z-index: 5;
+}
+.box .shouji .shouji_2 {
+  animation: dh 2000ms linear infinite;
+}
+@keyframes dh {
+  0% {
+    transform: translateY(-0.1rem);
+  }
+  50% {
+    transform: translateY(0.1rem);
+  }
+  100% {
+    transform: translateY(-0.1rem);
+  }
+}
+.box .zhuzi2 {
+  width: 1rem;
+  position: absolute;
+  bottom: 3.53rem;
+  right: 1.89rem;
+  z-index: 5;
+}
+.box .wifi {
+  width: 0.82rem;
+  position: absolute;
+  bottom: 6.84rem;
+  right: 1.97rem;
+  z-index: 6;
+}
+.box .wifi .wifi_2 {
+  animation: dh 2000ms linear infinite;
+}
+.box .jianzhu2 {
+  width: 1.5rem;
+  position: absolute;
+  bottom: 1.45rem;
+  right: 0.1rem;
+  z-index: 6;
+  --animate-duration: 2500ms;
+}
+.box .zhuzi3 {
+  width: 1.26rem;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.15rem;
+  z-index: 7;
+}
+.box .coin {
+  width: 0.6rem;
+  position: absolute;
+  bottom: 4.2rem;
+  right: 0.552rem;
+  z-index: 8;
+}
+.box .coin .coin_2 {
+  animation: dh 2000ms linear infinite;
+}
+.box .zhuzi4 {
+  width: 1rem;
+  position: absolute;
+  bottom: -0.52rem;
+  right: -0.38rem;
+  z-index: 8;
+  --animate-duration: 1000ms;
+}
+.box .delta {
+  width: 2rem;
+  position: absolute;
+  left: 2.52rem;
+  bottom: 0;
+  z-index: 19;
+  animation: sjx 2000ms linear forwards;
+}
+@keyframes sjx {
+  0% {
+    bottom: -1rem;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.box .road1 {
+  width: 1rem;
+  position: absolute;
+  bottom: -3.19rem;
+  left: 2.54rem;
+  z-index: 18;
+}
+.box .road2 {
+  width: 1rem;
+  position: absolute;
+  bottom: -2.9rem;
+  left: 2.04rem;
+  z-index: 17;
+}
+.box .road3 {
+  width: 2rem;
+  position: absolute;
+  bottom: -3.36rem;
+  left: 1.57rem;
+  z-index: 16;
+}
+.box .road4 {
+  width: 1.76rem;
+  position: absolute;
+  bottom: -0.33rem;
+  left: 1.33rem;
+  z-index: 15;
+}
+.box .road5 {
+  width: 1.76rem;
+  position: absolute;
+  bottom: 0.382rem;
+  left: 0.1rem;
+  z-index: 14;
+}
+.box .floor1 {
+  width: 1rem;
+  position: absolute;
+  bottom: -0.1rem;
+  left: 0.844rem;
+  z-index: 12;
+}
+.box .zhuzi5 {
+  width: 1rem;
+  position: absolute;
+  bottom: 0.66rem;
+  left: 1.34rem;
+  z-index: 11;
+}
+.box .road6 {
+  width: 1.26rem;
+  position: absolute;
+  bottom: 1.39rem;
+  left: 0.84rem;
+  z-index: 10;
+}
+.box .road7 {
+  width: 1.26rem;
+  position: absolute;
+  bottom: 1.815rem;
+  left: 1.579rem;
+  z-index: 9;
+}
+.box .road8 {
+  width: 1.26rem;
+  position: absolute;
+  bottom: 2.24rem;
+  left: 2.314rem;
+  z-index: 8;
+}
+.box .road9 {
+  width: 1.26rem;
+  position: absolute;
+  bottom: 2.67rem;
+  left: 3.055rem;
+  z-index: 7;
+}
+.box .zhuzi6 {
+  width: 1rem;
+  position: absolute;
+  bottom: 2.658rem;
+  left: 3.81rem;
+  z-index: 6;
+}
+.box .floor2 {
+  width: 1rem;
+  position: absolute;
+  bottom: 4.67rem;
+  left: 4.3rem;
+  z-index: 6;
+}
+.box .road10 {
+  width: 2rem;
+  position: absolute;
+  bottom: -0.07rem;
+  left: 3.82rem;
+  z-index: 7;
+}
+.box .road11 {
+  width: 1rem;
+  position: absolute;
+  bottom: 0.38rem;
+  left: 4.3rem;
+  z-index: 8;
+}
+.box .road12 {
+  width: 1rem;
+  position: absolute;
+  bottom: 0.09rem;
+  left: 4.8rem;
+  z-index: 9;
+}
+.box .zhuzi7 {
+  width: 1rem;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 5.3rem;
+  z-index: 10;
+}
+.box .floor3 {
+  width: 0.76rem;
+  position: absolute;
+  bottom: 2.758rem;
+  left: 5.04rem;
+  z-index: 11;
+}
+.box .road13 {
+  width: 1.26rem;
+  position: absolute;
+  bottom: -0.31rem;
+  left: 4.3rem;
+  z-index: 12;
+}
+.box .road14 {
+  width: 1.26rem;
+  position: absolute;
+  bottom: 0.14rem;
+  left: 3.58rem;
+  z-index: 13;
+}
+.box .zhuzi8 {
+  width: 1rem;
+  position: absolute;
+  bottom: -1.83rem;
+  left: 3.07rem;
+  z-index: 10;
+}
+.box .downup {
+  animation: downup 4000ms linear forwards;
+}
+@keyframes downup {
+  0% {
+    bottom: -1.83rem;
+  }
+  25% {
+    bottom: -2.63rem;
+  }
+  100% {
+    bottom: -0.7rem;
+  }
+}
+.box .fengche {
+  width: 1.63rem;
+  position: absolute;
+  bottom: 0.62rem;
+  left: 2.1rem;
+  z-index: 9;
+  --animate-duration: 3000ms;
+  overflow: hidden;
+}
+.box .fengche .fengche_box {
+  width: 9.99rem;
+  animation: fc_dh 500ms steps(1) infinite;
+}
+.box .fengche img {
+  width: 1.63rem;
+  float: left;
+}
+@keyframes fc_dh {
+  0% {
+    transform: translateX(-1.63rem);
+  }
+  33.3% {
+    transform: translateX(-3.26rem);
+  }
+  66.6% {
+    transform: translateX(-4.89rem);
+  }
+  100% {
+    transform: translateX(-6.52rem);
+  }
+}
+.box .active,
+.box .active2,
+.box .active3,
+.box .active4,
+.box .zhuzi1,
+.box .shouji,
+.box .zhuzi2,
+.box .zhuzi3,
+.box .wifi,
+.box .coin {
+  --animate-duration: 3000ms;
+}
+.box .gezi {
+  width: 0.7rem;
+  height: 1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 3.2rem;
+  z-index: 20;
+  animation: sjx 2000ms linear forwards;
+}
+.box .downup2 {
+  animation: downup2 4000ms linear forwards;
+}
+@keyframes downup2 {
+  0% {
+    bottom: 2.95rem;
+  }
+  25% {
+    bottom: 2.15rem;
+  }
+  100% {
+    bottom: 4.2rem;
+  }
+}
+.box .gezi1_1 {
+  position: absolute;
+  bottom: 4.01rem;
+  left: 1.54rem;
+  animation: none;
+}
+.box .gezi1_2 {
+  position: absolute;
+  bottom: 5.93rem;
+  left: 3.95rem;
+  animation: none;
+}
+.box .gezi1_3 {
+  position: absolute;
+  bottom: 3.4rem;
+  left: 5.45rem;
+  animation: none;
+}
+.box .gezi1_4 {
+  position: absolute;
+  bottom: 2.95rem;
+  left: 3.1rem;
+  animation: none;
+}
+@keyframes ge1 {
+  0% {
+    bottom: 0rem;
+    left: 3.2rem;
+  }
+  26.99% {
+    bottom: 1rem;
+    left: 1.7rem;
+  }
+  43.83% {
+    bottom: 1.6rem;
+    left: 2.7rem;
+  }
+  78.22% {
+    bottom: 2.8rem;
+    left: 0.65rem;
+  }
+  100% {
+    bottom: 4.01rem;
+    left: 1.54rem;
+  }
+}
+@keyframes ge2 {
+  0% {
+    bottom: 4.01rem;
+    left: 1.54rem;
+  }
+  14.63% {
+    bottom: 4.3rem;
+    left: 1.05rem;
+  }
+  100% {
+    bottom: 5.93rem;
+    left: 3.95rem;
+  }
+}
+@keyframes ge3 {
+  0% {
+    bottom: 5.93rem;
+    left: 3.95rem;
+  }
+  34.7% {
+    bottom: 4.82rem;
+    left: 4.89rem;
+  }
+  59.16% {
+    bottom: 4.31rem;
+    left: 4rem;
+  }
+  100% {
+    bottom: 3.4rem;
+    left: 5.45rem;
+  }
+}
+@keyframes ge4 {
+  0% {
+    bottom: 3.4rem;
+    left: 5.45rem;
+  }
+  63.63% {
+    bottom: 2.28rem;
+    left: 3.95rem;
+  }
+  100% {
+    bottom: 2.95rem;
+    left: 3.2rem;
+  }
+}
+.box .circle1,
+.box .circle2,
+.box .circle3,
+.box .circle4 {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: white 0.1rem solid;
+  position: absolute;
+  bottom: 3.45rem;
+  left: 1.15rem;
+  opacity: 0.4;
+  z-index: 24;
+  animation: circle_dh 1000ms linear infinite alternate-reverse;
+  display: none;
+}
+.box .circle2 {
+  bottom: 5.5rem;
+  left: 3.6rem;
+}
+.box .circle3 {
+  bottom: 2.9rem;
+  left: 5.1rem;
+}
+.box .circle4 {
+  bottom: 2.45rem;
+  left: 2.9rem;
+}
+@keyframes circle_dh {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.2);
+  }
+}
+.box .star1 {
+  width: 2.1rem;
+  height: 2.08rem;
+  background-image: url(../images/star_box1.png);
+  background-repeat: no-repeat;
+  background-size: 2.1rem 2.08rem;
+  position: absolute;
+  top: 3.87rem;
+  left: 2.59rem;
+  display: none;
+}
+.box .star1 .star1_gezi {
+  width: 0.7rem;
+  margin-left: 0.81rem;
+  margin-top: -0.6rem;
+}
+.box .star1 .star1_number {
+  color: white;
+  font-size: 0.24rem;
+  width: 1.8rem;
+  height: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.02rem solid #ffffff;
+  border-radius: 0.15rem;
+  line-height: 0.4rem;
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-left: 0.15rem;
+}
+.box .star2 {
+  width: 1.82rem;
+  height: 1.82rem;
+  background-image: url(../images/star_box2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 5.1rem;
+  right: 0.35rem;
+  display: none;
+}
+.box .star2 .star2_gezi {
+  width: 0.7rem;
+  margin-left: 0.6rem;
+  margin-top: -0.45rem;
+}
+.box .star2 .star2_number {
+  color: white;
+  font-size: 0.24rem;
+  width: 1.8rem;
+  height: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.02rem solid #ffffff;
+  border-radius: 0.15rem;
+  line-height: 0.4rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: -0.05rem;
+}
+.box .star3 {
+  width: 1.65rem;
+  height: 1.64rem;
+  background-image: url(../images/star_box3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 5.82rem;
+  left: 0.44rem;
+  display: none;
+}
+.box .star3 .star3_gezi {
+  width: 0.7rem;
+  margin-left: 0.55rem;
+  margin-top: -0.5rem;
+}
+.box .star3 .star3_number {
+  color: white;
+  font-size: 0.24rem;
+  width: 1.8rem;
+  height: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.02rem solid #ffffff;
+  border-radius: 0.15rem;
+  line-height: 0.4rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: -0.1rem;
+}
+.box .star1dh {
+  animation: star1_dh 1000ms linear forwards;
+}
+.box .star2dh {
+  animation: star2_dh 1000ms linear forwards;
+}
+.box .star3dh {
+  animation: star3_dh 1000ms linear forwards;
+}
+@keyframes star1_dh {
+  0% {
+    display: none;
+    transform: scale(0);
+  }
+  100% {
+    display: block;
+    transform: scale(1);
+  }
+}
+@keyframes star2_dh {
+  0% {
+    display: none;
+    transform: translateX(2rem) rotate(0);
+  }
+  100% {
+    display: block;
+    transform: translateX(0) rotate(360deg);
+  }
+}
+@keyframes star3_dh {
+  0% {
+    display: none;
+    transform: translateX(-2rem) rotate(0);
+  }
+  100% {
+    display: block;
+    transform: translateX(0) rotate(360deg);
+  }
+}
+@keyframes star_updown {
+  0% {
+    transform: translateY(0.1rem);
+  }
+  100% {
+    transform: translateY(-0.1rem);
+  }
+}
+.box .draw,
+.box .look {
+  width: 2.02rem;
+  height: 0.6rem;
+  border: 0.01rem solid white;
+  border-radius: 0.6rem;
+  line-height: 0.6rem;
+  position: absolute;
+  bottom: 0.61rem;
+  left: 0.7rem;
+  color: white;
+  font-size: 0.28rem;
+  text-align: center;
+}
+.box .draw img,
+.box .look img {
+  width: 0.18rem;
+  display: inline-block;
+}
+.box .draw span,
+.box .look span {
+  margin-left: 0.1rem;
+}
+.box .look {
+  left: 4.5rem;
+}
